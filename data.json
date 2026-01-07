@@ -1,197 +1,58 @@
 {
   "config": {
-    "marquee": "🔥 تخفیفات داغ شهر ایذه آغاز شد | فرصت محدود برای رزرو جایگاه تبلیغاتی | با ما دیده شوید 🔥"
+    "marquee": "🔥 بزرگترین جشنواره تخفیف ایذه آغاز شد | جهت رزرو تبلیغات با شماره ۰۹۲۲۰۷۳۰۶۲۸ تماس بگیرید 🔥"
   },
   "items": [
-    {
-      "id": 1,
-      "type": "story",
-      "name": "پیتزا شب",
-      "img": "https://www.w3schools.com/html/mov_bbb.mp4",
-      "desc": "لذت خوردن پیتزای داغ با ۲۰٪ تخفیف ویژه همشهریان عزیز ایذه‌ای.",
-      "phone": "09161112233",
-      "insta": "https://instagram.com/pizza_shab_izeh"
-    },
-    {
-      "id": 2,
-      "type": "story",
-      "name": "بوتیک ماه",
-      "img": "https://picsum.photos/400/600?random=2",
-      "desc": "کالکشن جدید زمستانه رسید. انواع پالتو و کاپشن با قیمت مناسب.",
-      "phone": "09162223344",
-      "insta": "https://instagram.com/mah_boutique"
-    },
-    {
-      "id": 3,
-      "type": "story",
-      "name": "کافه آنجا",
-      "img": "https://www.w3schools.com/html/horse.ogg",
-      "desc": "یک عصر دل‌انگیز با قهوه‌های دمی کافه آنجا.",
-      "phone": "09163334455",
-      "insta": "https://instagram.com/anja_cafe"
-    },
-    {
-      "id": 4,
-      "type": "story",
-      "name": "آرایشگاه رویال",
-      "img": "https://picsum.photos/400/600?random=4",
-      "desc": "خدمات تخصصی گریم و اصلاح با کادر حرفه‌ای.",
-      "phone": "09164445566",
-      "insta": "https://instagram.com/royal_barber"
-    },
-    {
-      "id": 5,
-      "type": "story",
-      "name": "موبایل آریا",
-      "img": "https://www.w3schools.com/html/mov_bbb.mp4",
-      "desc": "فروش اقساطی انواع گوشی‌های آیفون و سامسونگ بدون ضامن.",
-      "phone": "09165556677",
-      "insta": "https://instagram.com/aria_mobile"
-    },
-    {
-      "id": 6,
-      "type": "story",
-      "name": "قنادی گلستان",
-      "img": "https://picsum.photos/400/600?random=6",
-      "desc": "شیرینی‌های تازه و باکیفیت برای مراسمات شما.",
-      "phone": "09166667788",
-      "insta": "https://instagram.com/golestan_pastry"
-    },
-    {
-      "id": 7,
-      "type": "story",
-      "name": "باشگاه المپیک",
-      "img": "https://picsum.photos/400/600?random=7",
-      "desc": "ثبت‌نام دوره جدید بدنسازی و فیتنس زیر نظر مربی رسمی.",
-      "phone": "09167778899",
-      "insta": "https://instagram.com/olympic_club"
-    },
-    {
-      "id": 8,
-      "type": "story",
-      "name": "کتابفروشی فرهنگ",
-      "img": "https://picsum.photos/400/600?random=8",
-      "desc": "مرجع کامل کتاب‌های کنکوری و کمک درسی در ایذه.",
-      "phone": "09168889900",
-      "insta": "https://instagram.com/farhang_book"
-    },
-    {
-      "id": 9,
-      "type": "story",
-      "name": "عکاسی خاطره",
-      "img": "https://picsum.photos/400/600?random=9",
-      "desc": "ثبت لحظات ناب شما با جدیدترین تجهیزات عکاسی.",
-      "phone": "09169990011",
-      "insta": "https://instagram.com/khatereh_studio"
-    },
-    {
-      "id": 10,
-      "type": "story",
-      "name": "فست‌فود زیتون",
-      "img": "https://picsum.photos/400/600?random=10",
-      "desc": "طعم واقعی همبرگر زغالی را با ما تجربه کنید.",
-      "phone": "09161002030",
-      "insta": "https://instagram.com/zeytoon_fastfood"
-    },
-    {
-      "id": 11,
-      "type": "offer",
-      "name": "هایپر مارکت ایذه",
-      "img": "https://picsum.photos/400/300?random=11",
-      "desc": "تخفیف ۳۰ درصدی روی تمامی محصولات پروتئینی.",
-      "phone": "09162003040",
-      "insta": "https://instagram.com/izeh_hyper",
-      "badge": "۳۰٪ تخفیف"
-    },
-    {
-      "id": 12,
-      "type": "offer",
-      "name": "پخش لوازم خانگی",
-      "img": "https://www.w3schools.com/html/mov_bbb.mp4",
-      "desc": "فروش ویژه جهیزیه کامل عروس با برندهای معتبر جهانی.",
-      "phone": "09163004050",
-      "insta": "https://instagram.com/home_appliances",
-      "badge": "اقساط"
-    },
-    {
-      "id": 13,
-      "type": "offer",
-      "name": "کلینیک دندانپزشکی",
-      "img": "https://picsum.photos/400/300?random=13",
-      "desc": "ویزیت و چکاپ رایگان به مدت یک هفته.",
-      "phone": "09164005060",
-      "insta": "https://instagram.com/dentist_izeh",
-      "badge": "ویزیت رایگان"
-    },
-    {
-      "id": 14,
-      "type": "offer",
-      "name": "آموزشگاه رانندگی",
-      "img": "https://picsum.photos/400/300?random=14",
-      "desc": "ثبت‌نام گواهینامه پایه سه با شرایط پرداخت مرحله‌ای.",
-      "phone": "09165006070",
-      "insta": "https://instagram.com/driving_school",
-      "badge": "ثبت‌نام"
-    },
-    {
-      "id": 15,
-      "type": "offer",
-      "name": "کفش ملی ایذه",
-      "img": "https://picsum.photos/400/300?random=15",
-      "desc": "انواع کفش‌های چرم و اسپورت با ضمانت ۶ ماهه.",
-      "phone": "09166007080",
-      "insta": "https://instagram.com/melli_shoe",
-      "badge": "۱۵٪ تخفیف"
-    },
-    {
-      "id": 16,
-      "type": "offer",
-      "name": "رستوران بختیاری",
-      "img": "https://picsum.photos/400/300?random=16",
-      "desc": "کباب بختیاری اصیل با برنج درجه یک ایرانی.",
-      "phone": "09167008090",
-      "insta": "https://instagram.com/bakhtiari_rest",
-      "badge": "منوی ویژه"
-    },
-    {
-      "id": 17,
-      "type": "offer",
-      "name": "خدمات کامپیوتری",
-      "img": "https://picsum.photos/400/300?random=17",
-      "desc": "تعمیرات تخصصی لپ‌تاپ و نصب ویندوز در محل.",
-      "phone": "09168009010",
-      "insta": "https://instagram.com/it_services",
-      "badge": "فوری"
-    },
-    {
-      "id": 18,
-      "type": "offer",
-      "name": "لوازم تحریر دانش",
-      "img": "https://picsum.photos/400/300?random=18",
-      "desc": "پک کامل لوازم تحریر با قیمت‌های سال گذشته.",
-      "phone": "09169001020",
-      "insta": "https://instagram.com/danesh_stationery",
-      "badge": "ارزان"
-    },
-    {
-      "id": 19,
-      "type": "offer",
-      "name": "گل‌فروشی رز",
-      "img": "https://picsum.photos/400/300?random=19",
-      "desc": "گل‌آرایی ماشین عروس و دسته گل با متد اروپایی.",
-      "phone": "09161102233",
-      "insta": "https://instagram.com/rose_flower",
-      "badge": "جدید"
-    },
-    {
-      "id": 20,
-      "type": "offer",
-      "name": "باشگاه یوگا",
-      "img": "https://picsum.photos/400/300?random=20",
-      "desc": "رسیدن به آرامش و سلامت جسم با کلاس‌های یوگا.",
-      "phone": "09162203344",
-      "insta": "https://instagram.com/yoga_center",
-      "badge": "تخفیف ویژه"
-    }
+    { "id": 1, "type": "story", "name": "پیتزا شب", "img": "https://picsum.photos/400/600?random=1", "desc": "۲۰٪ تخفیف روی تمام پیتزاها مخصوص امشب", "phone": "09160000001", "insta": "https://insta.com/pizza" },
+    { "id": 2, "type": "story", "name": "بوتیک ماه", "img": "https://picsum.photos/400/600?random=2", "desc": "حراج آخر فصل کاپشن‌های ترک", "phone": "09160000002", "insta": "https://insta.com/mah" },
+    { "id": 3, "type": "story", "name": "آرایشگاه آریا", "img": "https://picsum.photos/400/600?random=3", "desc": "گریم داماد با متد روز اروپا", "phone": "09160000003", "insta": "https://insta.com/aria" },
+    { "id": 4, "type": "story", "name": "کافه لند", "img": "https://picsum.photos/400/600?random=4", "desc": "یک قهوه رایگان مهمان ما باشید (با ارائه این استوری)", "phone": "09160000004", "insta": "https://insta.com/cafe" },
+    { "id": 5, "type": "story", "name": "موبایل ایذه", "img": "https://picsum.photos/400/600?random=5", "desc": "تعویض ال‌سی‌دی آیفون در نیم ساعت", "phone": "09160000005", "insta": "https://insta.com/mobile" },
+    { "id": 6, "type": "story", "name": "قنادی گل", "img": "https://picsum.photos/400/600?random=6", "desc": "کیک‌های تولد با طرح دلخواه شما", "phone": "09160000006", "insta": "https://insta.com/cake" },
+    { "id": 7, "type": "story", "name": "باشگاه اکسیژن", "img": "https://picsum.photos/400/600?random=7", "desc": "ثبت‌نام دوره چربی‌سوزی با تخفیف ویژه", "phone": "09160000007", "insta": "https://insta.com/gym" },
+    { "id": 8, "type": "story", "name": "فروشگاه پارسا", "img": "https://picsum.photos/400/600?random=8", "desc": "لوازم تحریر فانتزی رسید", "phone": "09160000008", "insta": "https://insta.com/stationery" },
+    { "id": 9, "type": "story", "name": "کلینیک دندان", "img": "https://picsum.photos/400/600?random=9", "desc": "جرم‌گیری رایگان برای دانش‌آموزان", "phone": "09160000009", "insta": "https://insta.com/dent" },
+    { "id": 10, "type": "story", "name": "املاک خوزستان", "img": "https://picsum.photos/400/600?random=10", "desc": "فروش ویلاهای لوکس در حومه ایذه", "phone": "09160000010", "insta": "https://insta.com/melk" },
+    { "id": 11, "type": "story", "name": "اتو گالری", "img": "https://picsum.photos/400/600?random=11", "desc": "خرید و فروش نقد و اقساط خودرو", "phone": "09160000011", "insta": "https://insta.com/car" },
+    { "id": 12, "type": "story", "name": "پارچه سرای یاس", "img": "https://picsum.photos/400/600?random=12", "desc": "انواع پارچه‌های مجلسی کار شده", "phone": "09160000012", "insta": "https://insta.com/fabric" },
+    { "id": 13, "type": "story", "name": "آتلیه لنز", "img": "https://picsum.photos/400/600?random=13", "desc": "عکاسی کودک با دکور جدید", "phone": "09160000013", "insta": "https://insta.com/photo" },
+    { "id": 14, "type": "story", "name": "گل فروشی رز", "img": "https://picsum.photos/400/600?random=14", "desc": "دسته گل عروس با گل‌های هلندی", "phone": "09160000014", "insta": "https://insta.com/flower" },
+    { "id": 15, "type": "story", "name": "کیف و کفش", "img": "https://picsum.photos/400/600?random=15", "desc": "ست‌های کیف و کفش مجلسی", "phone": "09160000015", "insta": "https://insta.com/shoes" },
+    { "id": 16, "type": "story", "name": "تعمیرات پکیج", "img": "https://picsum.photos/400/600?random=16", "desc": "سرویس دوره‌ای پکیج در منزل شما", "phone": "09160000016", "insta": "https://insta.com/fix" },
+    { "id": 17, "type": "story", "name": "آموزشگاه زبان", "img": "https://picsum.photos/400/600?random=17", "desc": "ثبت‌نام ترم جدید کودکان و بزرگسالان", "phone": "09160000017", "insta": "https://insta.com/lang" },
+    { "id": 18, "type": "story", "name": "هایپر استار", "img": "https://picsum.photos/400/600?random=18", "desc": "تخفیف روی روغن و برنج", "phone": "09160000018", "insta": "https://insta.com/hyper" },
+    { "id": 19, "type": "story", "name": "رستوران سنتی", "img": "https://picsum.photos/400/600?random=19", "desc": "کباب بختیاری با نان داغ", "phone": "09160000019", "insta": "https://insta.com/food" },
+    { "id": 20, "type": "story", "name": "لوازم خانگی", "img": "https://picsum.photos/400/600?random=20", "desc": "فروش اقساطی تلویزیون و یخچال", "phone": "09160000020", "insta": "https://insta.com/home" },
+    { "id": 21, "type": "story", "name": "اسباب‌بازی", "img": "https://picsum.photos/400/600?random=21", "desc": "انواع ماشین کنترلی و عروسک", "phone": "09160000021", "insta": "https://insta.com/toy" },
+    { "id": 22, "type": "story", "name": "دنیای خواب", "img": "https://picsum.photos/400/600?random=22", "desc": "تشک‌های طبی با ضمانت تعویض", "phone": "09160000022", "insta": "https://insta.com/sleep" },
+    { "id": 23, "type": "story", "name": "آجیل ایذه", "img": "https://picsum.photos/400/600?random=23", "desc": "پسته رفسنجان درجه یک", "phone": "09160000023", "insta": "https://insta.com/nuts" },
+    { "id": 24, "type": "story", "name": "پروتئین مارکت", "img": "https://picsum.photos/400/600?random=24", "desc": "مرغ تازه و گوشت گرم گوسفندی", "phone": "09160000024", "insta": "https://insta.com/meat" },
+    { "id": 25, "type": "story", "name": "پرده سرا", "img": "https://picsum.photos/400/600?random=25", "desc": "طراحی و دوخت انواع پرده مدرن", "phone": "09160000025", "insta": "https://insta.com/curtain" },
+
+    { "id": 26, "type": "offer", "name": "پیتزا مخصوص شب", "img": "https://www.w3schools.com/html/mov_bbb.mp4", "off": "۳۰٪", "desc": "پیتزا خانواده به همراه نوشابه رایگان و ارسال رایگان در محدوده شهر ایذه.", "phone": "09160000026", "insta": "https://insta.com/pizza" },
+    { "id": 27, "type": "offer", "name": "حراج بوتیک ماه", "img": "https://picsum.photos/400/300?random=27", "off": "۵۰٪", "desc": "تمام اجناس زمستانه به قیمت فاکتور عرضه می‌شود.", "phone": "09160000027", "insta": "https://insta.com/mah" },
+    { "id": 28, "type": "offer", "name": "موبایل آریا", "img": "https://www.w3schools.com/html/mov_bbb.mp4", "off": "تخفیف", "desc": "خرید نقدی گوشی‌های شیائومی با هندزفری هدیه.", "phone": "09160000028", "insta": "https://insta.com/aria" },
+    { "id": 29, "type": "offer", "name": "آرایشگاه VIP", "img": "https://picsum.photos/400/300?random=29", "off": "ویژه", "desc": "پاکسازی پوست و اصلاح سر فقط ۱۰۰ هزار تومان برای مدت محدود.", "phone": "09160000029", "insta": "https://insta.com/barber" },
+    { "id": 30, "type": "offer", "name": "کافه آنجا", "img": "https://picsum.photos/400/300?random=30", "off": "۱۵٪", "desc": "صبحانه‌های گرم و سرد هر روز از ساعت ۸ صبح.", "phone": "09160000030", "insta": "https://insta.com/anja" },
+    { "id": 31, "type": "offer", "name": "لوازم خانگی پاک", "img": "https://picsum.photos/400/300?random=31", "off": "اقساط", "desc": "یخچال ساید بای ساید با اقساط ۱۲ ماهه بدون بهره.", "phone": "09160000031", "insta": "https://insta.com/home" },
+    { "id": 32, "type": "offer", "name": "قنادی طلایی", "img": "https://picsum.photos/400/300?random=32", "off": "۱۰٪", "desc": "شیرینی‌های تر و دسر مخصوص مجالس.", "phone": "09160000032", "insta": "https://insta.com/gold" },
+    { "id": 33, "type": "offer", "name": "باشگاه هدف", "img": "https://picsum.photos/400/300?random=33", "off": "هدیه", "desc": "ثبت‌نام ۳ ماهه، ۱ ماه رایگان هدیه بگیرید.", "phone": "09160000033", "insta": "https://insta.com/gym2" },
+    { "id": 34, "type": "offer", "name": "کفش اسپورت", "img": "https://picsum.photos/400/300?random=34", "off": "۴۰٪", "desc": "کتونی‌های کپی با کیفیت عالی و ضمانت دوخت.", "phone": "09160000034", "insta": "https://insta.com/shoes2" },
+    { "id": 35, "type": "offer", "name": "کلینیک نور", "img": "https://picsum.photos/400/300?random=35", "off": "رایگان", "desc": "ویزیت چشم برای افراد بالای ۶۰ سال رایگان می‌باشد.", "phone": "09160000035", "insta": "https://insta.com/eye" },
+    { "id": 36, "type": "offer", "name": "رستوران بختیاری", "img": "https://picsum.photos/400/300?random=36", "off": "۱۰٪", "desc": "کباب لقمه مخصوص با برنج محلی.", "phone": "09160000036", "insta": "https://insta.com/food2" },
+    { "id": 37, "type": "offer", "name": "پوشاک ارزان", "img": "https://picsum.photos/400/300?random=37", "off": "حراج", "desc": "شلوار جین فقط از ۲۵۰ هزار تومان.", "phone": "09160000037", "insta": "https://insta.com/clothes" },
+    { "id": 38, "type": "offer", "name": "دنیای دیجیتال", "img": "https://picsum.photos/400/300?random=38", "off": "۲۰٪", "desc": "پاوربانک و شارژر اصلی با گارانتی تعویض.", "phone": "09160000038", "insta": "https://insta.com/digi" },
+    { "id": 39, "type": "offer", "name": "آموزشگاه رانندگی", "img": "https://picsum.photos/400/300?random=39", "off": "ثبت‌نام", "desc": "ثبت‌نام گواهینامه پایه دو و پایه سه.", "phone": "09160000039", "insta": "https://insta.com/drive" },
+    { "id": 40, "type": "offer", "name": "لوازم یدکی", "img": "https://picsum.photos/400/300?random=40", "off": "فوری", "desc": "لوازم یدکی سایپا و ایران‌خودرو زیر قیمت بازار.", "phone": "09160000040", "insta": "https://insta.com/part" },
+    { "id": 41, "type": "offer", "name": "عطاری صحت", "img": "https://picsum.photos/400/300?random=41", "off": "ارگانیک", "desc": "روغن‌گیری در حضور مشتری و داروهای گیاهی.", "phone": "09160000041", "insta": "https://insta.com/health" },
+    { "id": 42, "type": "offer", "name": "کتابسرای قلم", "img": "https://picsum.photos/400/300?random=42", "off": "۲۵٪", "desc": "کتاب‌های کنکوری و کمک درسی با تخفیف ویژه.", "phone": "09160000042", "insta": "https://insta.com/book" },
+    { "id": 43, "type": "offer", "name": "فست‌فود مرکزی", "img": "https://picsum.photos/400/300?random=43", "off": "۱۰٪", "desc": "هات‌داگ زغالی و سیب‌زمینی ویژه.", "phone": "09160000043", "insta": "https://insta.com/fast" },
+    { "id": 44, "type": "offer", "name": "دنیای کودک", "img": "https://picsum.photos/400/300?random=44", "off": "۳۰٪", "desc": "سیسمونی کامل نوزاد با برندهای باکیفیت.", "phone": "09160000044", "insta": "https://insta.com/baby" },
+    { "id": 45, "type": "offer", "name": "ابزارآلات ایذه", "img": "https://picsum.photos/400/300?random=45", "off": "حرفه‌ای", "desc": "دریل و فرز با گارانتی طلایی.", "phone": "09160000045", "insta": "https://insta.com/tools" },
+    { "id": 46, "type": "offer", "name": "باشگاه یوگا", "img": "https://picsum.photos/400/300?random=46", "off": "آرامش", "desc": "کلاس‌های مدیتیشن و یوگا برای بانوان.", "phone": "09160000046", "insta": "https://insta.com/yoga" },
+    { "id": 47, "type": "offer", "name": "پرده سرای مدرن", "img": "https://picsum.photos/400/300?random=47", "off": "جدید", "desc": "نصب و اندازه‌گیری رایگان پرده در ایذه.", "phone": "09160000047", "insta": "https://insta.com/curtain2" },
+    { "id": 48, "type": "offer", "name": "ساعت مچی", "img": "https://picsum.photos/400/300?random=48", "off": "۲۰٪", "desc": "ساعت‌های برند با کارت ضمانت یکساله.", "phone": "09160000048", "insta": "https://insta.com/watch" },
+    { "id": 49, "type": "offer", "name": "خشکشویی تمیز", "img": "https://picsum.photos/400/300?random=49", "off": "تخفیف", "desc": "شستشوی پتو و پرده با دستگاه‌های تمام اتوماتیک.", "phone": "09160000049", "insta": "https://insta.com/wash" },
+    { "id": 50, "type": "offer", "name": "خدمات دکوراسیون", "img": "https://picsum.photos/400/300?random=50", "off": "طراحی", "desc": "کابینت و کمد دیواری با قیمت مناسب و متریال درجه یک.", "phone": "09160000050", "insta": "https://insta.com/decor" }
   ]
 }
