@@ -55,4 +55,9 @@
     { "id": 49, "type": "offer", "name": "خشکشویی تمیز", "img": "https://picsum.photos/400/300?random=49", "off": "تخفیف", "desc": "شستشوی پتو و پرده با دستگاه‌های تمام اتوماتیک.", "phone": "09160000049", "insta": "https://insta.com/wash" },
     { "id": 50, "type": "offer", "name": "خدمات دکوراسیون", "img": "https://picsum.photos/400/300?random=50", "off": "طراحی", "desc": "کابینت و کمد دیواری با قیمت مناسب و متریال درجه یک.", "phone": "09160000050", "insta": "https://insta.com/decor" }
   ]
+},
+{
+  "config": {
+    "marquee": "سلام به ایذه تخفیف خوش آمدید"
+  },
 }
