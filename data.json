@@ -1,26 +1,197 @@
 {
   "config": {
-    "marquee": "🔥 تخفیفات ویژه زمستانه در ایذه آغاز شد | برای رزرو تبلیغات با شماره ۰۹۲۲۰۷۳۰۶۲۸ تماس بگیرید 🔥"
+    "marquee": "🔥 تخفیفات داغ شهر ایذه آغاز شد | فرصت محدود برای رزرو جایگاه تبلیغاتی | با ما دیده شوید 🔥"
   },
   "items": [
     {
       "id": 1,
       "type": "story",
       "name": "پیتزا شب",
-      "img": "https://picsum.photos/400/600?random=1",
-      "desc": "۲۰٪ تخفیف روی تمامی پیتزاها فقط امشب!",
-      "phone": "09160000000",
-      "insta": "https://instagram.com/pizza"
+      "img": "https://www.w3schools.com/html/mov_bbb.mp4",
+      "desc": "لذت خوردن پیتزای داغ با ۲۰٪ تخفیف ویژه همشهریان عزیز ایذه‌ای.",
+      "phone": "09161112233",
+      "insta": "https://instagram.com/pizza_shab_izeh"
     },
     {
       "id": 2,
-      "type": "offer",
+      "type": "story",
       "name": "بوتیک ماه",
       "img": "https://picsum.photos/400/600?random=2",
-      "desc": "حراج آخر فصل انواع کاپشن و پالتو با قیمت استثنایی.",
-      "phone": "09161111111",
-      "insta": "https://instagram.com/boutique",
-      "badge": "۳۰٪"
+      "desc": "کالکشن جدید زمستانه رسید. انواع پالتو و کاپشن با قیمت مناسب.",
+      "phone": "09162223344",
+      "insta": "https://instagram.com/mah_boutique"
+    },
+    {
+      "id": 3,
+      "type": "story",
+      "name": "کافه آنجا",
+      "img": "https://www.w3schools.com/html/horse.ogg",
+      "desc": "یک عصر دل‌انگیز با قهوه‌های دمی کافه آنجا.",
+      "phone": "09163334455",
+      "insta": "https://instagram.com/anja_cafe"
+    },
+    {
+      "id": 4,
+      "type": "story",
+      "name": "آرایشگاه رویال",
+      "img": "https://picsum.photos/400/600?random=4",
+      "desc": "خدمات تخصصی گریم و اصلاح با کادر حرفه‌ای.",
+      "phone": "09164445566",
+      "insta": "https://instagram.com/royal_barber"
+    },
+    {
+      "id": 5,
+      "type": "story",
+      "name": "موبایل آریا",
+      "img": "https://www.w3schools.com/html/mov_bbb.mp4",
+      "desc": "فروش اقساطی انواع گوشی‌های آیفون و سامسونگ بدون ضامن.",
+      "phone": "09165556677",
+      "insta": "https://instagram.com/aria_mobile"
+    },
+    {
+      "id": 6,
+      "type": "story",
+      "name": "قنادی گلستان",
+      "img": "https://picsum.photos/400/600?random=6",
+      "desc": "شیرینی‌های تازه و باکیفیت برای مراسمات شما.",
+      "phone": "09166667788",
+      "insta": "https://instagram.com/golestan_pastry"
+    },
+    {
+      "id": 7,
+      "type": "story",
+      "name": "باشگاه المپیک",
+      "img": "https://picsum.photos/400/600?random=7",
+      "desc": "ثبت‌نام دوره جدید بدنسازی و فیتنس زیر نظر مربی رسمی.",
+      "phone": "09167778899",
+      "insta": "https://instagram.com/olympic_club"
+    },
+    {
+      "id": 8,
+      "type": "story",
+      "name": "کتابفروشی فرهنگ",
+      "img": "https://picsum.photos/400/600?random=8",
+      "desc": "مرجع کامل کتاب‌های کنکوری و کمک درسی در ایذه.",
+      "phone": "09168889900",
+      "insta": "https://instagram.com/farhang_book"
+    },
+    {
+      "id": 9,
+      "type": "story",
+      "name": "عکاسی خاطره",
+      "img": "https://picsum.photos/400/600?random=9",
+      "desc": "ثبت لحظات ناب شما با جدیدترین تجهیزات عکاسی.",
+      "phone": "09169990011",
+      "insta": "https://instagram.com/khatereh_studio"
+    },
+    {
+      "id": 10,
+      "type": "story",
+      "name": "فست‌فود زیتون",
+      "img": "https://picsum.photos/400/600?random=10",
+      "desc": "طعم واقعی همبرگر زغالی را با ما تجربه کنید.",
+      "phone": "09161002030",
+      "insta": "https://instagram.com/zeytoon_fastfood"
+    },
+    {
+      "id": 11,
+      "type": "offer",
+      "name": "هایپر مارکت ایذه",
+      "img": "https://picsum.photos/400/300?random=11",
+      "desc": "تخفیف ۳۰ درصدی روی تمامی محصولات پروتئینی.",
+      "phone": "09162003040",
+      "insta": "https://instagram.com/izeh_hyper",
+      "badge": "۳۰٪ تخفیف"
+    },
+    {
+      "id": 12,
+      "type": "offer",
+      "name": "پخش لوازم خانگی",
+      "img": "https://www.w3schools.com/html/mov_bbb.mp4",
+      "desc": "فروش ویژه جهیزیه کامل عروس با برندهای معتبر جهانی.",
+      "phone": "09163004050",
+      "insta": "https://instagram.com/home_appliances",
+      "badge": "اقساط"
+    },
+    {
+      "id": 13,
+      "type": "offer",
+      "name": "کلینیک دندانپزشکی",
+      "img": "https://picsum.photos/400/300?random=13",
+      "desc": "ویزیت و چکاپ رایگان به مدت یک هفته.",
+      "phone": "09164005060",
+      "insta": "https://instagram.com/dentist_izeh",
+      "badge": "ویزیت رایگان"
+    },
+    {
+      "id": 14,
+      "type": "offer",
+      "name": "آموزشگاه رانندگی",
+      "img": "https://picsum.photos/400/300?random=14",
+      "desc": "ثبت‌نام گواهینامه پایه سه با شرایط پرداخت مرحله‌ای.",
+      "phone": "09165006070",
+      "insta": "https://instagram.com/driving_school",
+      "badge": "ثبت‌نام"
+    },
+    {
+      "id": 15,
+      "type": "offer",
+      "name": "کفش ملی ایذه",
+      "img": "https://picsum.photos/400/300?random=15",
+      "desc": "انواع کفش‌های چرم و اسپورت با ضمانت ۶ ماهه.",
+      "phone": "09166007080",
+      "insta": "https://instagram.com/melli_shoe",
+      "badge": "۱۵٪ تخفیف"
+    },
+    {
+      "id": 16,
+      "type": "offer",
+      "name": "رستوران بختیاری",
+      "img": "https://picsum.photos/400/300?random=16",
+      "desc": "کباب بختیاری اصیل با برنج درجه یک ایرانی.",
+      "phone": "09167008090",
+      "insta": "https://instagram.com/bakhtiari_rest",
+      "badge": "منوی ویژه"
+    },
+    {
+      "id": 17,
+      "type": "offer",
+      "name": "خدمات کامپیوتری",
+      "img": "https://picsum.photos/400/300?random=17",
+      "desc": "تعمیرات تخصصی لپ‌تاپ و نصب ویندوز در محل.",
+      "phone": "09168009010",
+      "insta": "https://instagram.com/it_services",
+      "badge": "فوری"
+    },
+    {
+      "id": 18,
+      "type": "offer",
+      "name": "لوازم تحریر دانش",
+      "img": "https://picsum.photos/400/300?random=18",
+      "desc": "پک کامل لوازم تحریر با قیمت‌های سال گذشته.",
+      "phone": "09169001020",
+      "insta": "https://instagram.com/danesh_stationery",
+      "badge": "ارزان"
+    },
+    {
+      "id": 19,
+      "type": "offer",
+      "name": "گل‌فروشی رز",
+      "img": "https://picsum.photos/400/300?random=19",
+      "desc": "گل‌آرایی ماشین عروس و دسته گل با متد اروپایی.",
+      "phone": "09161102233",
+      "insta": "https://instagram.com/rose_flower",
+      "badge": "جدید"
+    },
+    {
+      "id": 20,
+      "type": "offer",
+      "name": "باشگاه یوگا",
+      "img": "https://picsum.photos/400/300?random=20",
+      "desc": "رسیدن به آرامش و سلامت جسم با کلاس‌های یوگا.",
+      "phone": "09162203344",
+      "insta": "https://instagram.com/yoga_center",
+      "badge": "تخفیف ویژه"
     }
   ]
 }
