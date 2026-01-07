@@ -4,136 +4,111 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>تخفیفات ایذه</title>
-    <link rel="manifest" href="manifest.json">
     <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet">
     <style>
         :root { --main: #ff3e3e; --bg: #0f172a; --card: #1e293b; --accent: #00f2fe; }
-        body { font-family: Vazirmatn, sans-serif; background: var(--bg); color: white; margin: 0; padding-bottom: 90px; overflow-x: hidden; }
+        body { font-family: Vazirmatn, sans-serif; background: var(--bg); color: white; margin: 0; padding-bottom: 90px; user-select: none; -webkit-tap-highlight-color: transparent; }
 
-        /* هدر اختصاصی */
-        .site-header { text-align: center; padding: 20px 10px; background: linear-gradient(to bottom, #1e293b, var(--bg)); }
-        .site-title { font-size: 28px; font-weight: 900; color: var(--main); margin: 0; text-shadow: 0 0 10px rgba(255,62,62,0.3); }
-        .site-slogan { font-size: 14px; color: var(--accent); margin-top: 5px; font-weight: bold; animation: blink 1.5s infinite; }
-        
-        @keyframes blink { 
-            0%, 100% { opacity: 1; transform: scale(1); } 
-            50% { opacity: 0.3; transform: scale(0.95); } 
-        }
-
-        /* نصب PWA */
-        #pwa-banner { display: none; background: #fff; color: #000; padding: 12px; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 1000; border-bottom: 2px solid var(--main); }
-        #pwa-banner button { background: var(--main); color: white; border: none; padding: 8px 15px; border-radius: 10px; font-weight: bold; }
-
-        /* متن روان */
-        .marquee-container { background: #000; color: #fff; padding: 10px 0; overflow: hidden; border-bottom: 1px solid #333; }
-        .marquee-content { display: inline-block; white-space: nowrap; animation: scroll 25s linear infinite; font-size: 13px; }
-        @keyframes scroll { from { transform: translateX(-100%); } to { transform: translateX(100vw); } }
+        /* هدر و شعار */
+        .site-header { text-align: center; padding: 20px 10px; }
+        .site-title { font-size: 26px; font-weight: 900; color: var(--main); margin: 0; }
+        .site-slogan { font-size: 13px; color: var(--accent); animation: blink 1.5s infinite; margin-top: 5px; }
+        @keyframes blink { 50% { opacity: 0.3; } }
 
         /* استوری‌ها */
-        .story-bar { display: flex; gap: 15px; padding: 15px 20px; overflow-x: auto; scrollbar-width: none; }
-        .story-circle { min-width: 75px; text-align: center; cursor: pointer; }
-        .story-circle img, .story-circle video { width: 66px; height: 66px; border-radius: 50%; border: 3px solid var(--main); padding: 2px; object-fit: cover; }
-        .story-circle span { font-size: 11px; display: block; margin-top: 5px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+        .story-bar { display: flex; gap: 15px; padding: 15px; overflow-x: auto; scrollbar-width: none; }
+        .story-circle { min-width: 70px; text-align: center; position: relative; }
+        .story-circle img, .story-circle video { width: 66px; height: 66px; border-radius: 50%; border: 3px solid var(--main); object-fit: cover; }
 
-        /* کارت‌های تخفیف */
+        /* شبکه کارت‌ها */
         .main-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; padding: 12px; }
-        .offer-card { background: var(--card); border-radius: 20px; overflow: hidden; position: relative; cursor: pointer; box-shadow: 0 4px 15px rgba(0,0,0,0.3); }
-        .offer-card img, .offer-card video { width: 100%; height: 160px; object-fit: cover; }
-        .offer-badge { position: absolute; top: 10px; right: 10px; background: var(--main); padding: 2px 10px; border-radius: 10px; font-size: 11px; font-weight: bold; z-index: 2; }
-        .offer-name { padding: 12px; font-size: 13px; font-weight: bold; text-align: center; color: #fff; }
-
-        /* مودال (پنجره بازشو) */
-        #modal { display: none; position: fixed; inset: 0; background: #000; z-index: 9999; }
-        .modal-content { height: 100%; display: flex; flex-direction: column; position: relative; }
-        .media-container { width: 100%; height: 60%; background: #000; display: flex; align-items: center; justify-content: center; overflow: hidden; }
-        .modal-media { width: 100%; height: 100%; object-fit: contain; }
-        .modal-info { padding: 25px; flex-grow: 1; background: var(--bg); border-top-left-radius: 30px; border-top-right-radius: 30px; margin-top: -30px; box-shadow: 0 -10px 20px rgba(0,0,0,0.5); }
-        .close-btn { position: absolute; top: 20px; left: 20px; background: rgba(0,0,0,0.6); color: white; border: none; width: 40px; height: 40px; border-radius: 50%; font-size: 20px; cursor: pointer; z-index: 10001; }
+        .offer-card { background: var(--card); border-radius: 18px; overflow: hidden; position: relative; }
+        .offer-card img, .offer-card video { width: 100%; height: 150px; object-fit: cover; }
         
-        .modal-btns { display: flex; gap: 8px; margin-top: 20px; }
-        .btn { flex: 1; padding: 14px 5px; border-radius: 15px; border: none; color: white; font-weight: bold; text-decoration: none; text-align: center; font-size: 12px; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 4px; }
-        .btn-call { background: #27ae60; }
-        .btn-insta { background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); }
-        .btn-share { background: #334155; }
+        /* تگ تخفیف */
+        .off-tag { position: absolute; top: 8px; left: 8px; background: var(--main); color: white; padding: 2px 8px; border-radius: 8px; font-size: 11px; font-weight: bold; z-index: 5; }
 
-        .pulse-btn { position: fixed; bottom: 15px; left: 50%; transform: translateX(-50%); background: #27ae60; color: white; width: 90%; padding: 16px; border-radius: 50px; border: none; font-weight: bold; animation: pulse 2s infinite; z-index: 900; box-shadow: 0 5px 15px rgba(39, 174, 96, 0.4); }
-        @keyframes pulse { 0% { transform: translateX(-50%) scale(1); box-shadow: 0 0 0 0 rgba(39, 174, 96, 0.7); } 70% { transform: translateX(-50%) scale(1.02); box-shadow: 0 0 0 15px rgba(39, 174, 96, 0); } 100% { transform: translateX(-50%) scale(1); } }
+        /* مودال پیشرفته استوری */
+        #modal { display: none; position: fixed; inset: 0; background: #000; z-index: 10000; }
+        .progress-container { position: absolute; top: 10px; left: 10px; right: 10px; height: 3px; background: rgba(255,255,255,0.2); z-index: 10001; }
+        #progress-bar { height: 100%; background: white; width: 0%; }
+
+        .modal-body { height: 100%; display: flex; flex-direction: column; }
+        .media-viewer { flex: 2; display: flex; align-items: center; justify-content: center; background: #000; position: relative; }
+        .modal-media { max-width: 100%; max-height: 100%; object-fit: contain; }
+
+        .info-panel { flex: 1; background: var(--bg); border-top: 2px solid #333; padding: 20px; overflow-y: auto; position: relative; border-radius: 25px 25px 0 0; margin-top: -20px; }
+        
+        /* دکمه بستن پایین */
+        .close-footer { padding: 10px; background: var(--bg); text-align: center; }
+        .btn-close { width: 50px; height: 50px; border-radius: 50%; border: 2px solid #444; background: none; color: white; font-size: 20px; cursor: pointer; }
+
+        .modal-btns { display: flex; gap: 10px; margin-top: 15px; }
+        .btn { flex: 1; padding: 12px; border-radius: 12px; border: none; font-weight: bold; text-align: center; text-decoration: none; color: white; font-size: 13px; }
     </style>
 </head>
 <body>
-
-    <div id="pwa-banner">
-        <span>📲 نصب اپلیکیشن تخفیفات ایذه</span>
-        <button id="install-btn">نصب سریع</button>
-    </div>
 
     <header class="site-header">
         <h1 class="site-title">تخفیفات ایذه</h1>
         <div class="site-slogan">کی تو ایذه تخفیف گذاشته؟</div>
     </header>
 
-    <div class="marquee-container">
-        <div class="marquee-content" id="marquee-text">درحال دریافت آخرین تخفیف‌ها...</div>
-    </div>
-
     <div class="story-bar" id="story-render"></div>
     <div class="main-grid" id="offer-render"></div>
 
-    <button class="pulse-btn" onclick="location.href='tel:09220730628'">✨ ثبت تبلیغ شما (کلیک کنید)</button>
-
-    <div id="modal">
-        <button class="close-btn" onclick="closeModal()">✕</button>
-        <div class="modal-content">
-            <div class="media-container" id="modal-media-container">
-                </div>
-            <div class="modal-info">
-                <h2 id="modal-title" style="margin-top:0; color:var(--accent);"></h2>
-                <p id="modal-desc" style="line-height:1.7; color:#cbd5e1; font-size: 14px;"></p>
+    <div id="modal" onmousedown="pauseStory()" onmouseup="resumeStory()" ontouchstart="pauseStory()" ontouchend="resumeStory()">
+        <div class="progress-container"><div id="progress-bar"></div></div>
+        
+        <div class="modal-body">
+            <div class="media-viewer" id="media-box"></div>
+            
+            <div class="info-panel">
+                <h2 id="m-title" style="margin:0; color:var(--accent);"></h2>
+                <div id="m-desc" style="margin-top:10px; font-size:14px; color:#ccc; line-height:1.6;"></div>
+                
                 <div class="modal-btns">
-                    <a id="modal-call" class="btn btn-call">📞 تماس</a>
-                    <a id="modal-insta" target="_blank" class="btn btn-insta">📸 اینستاگرام</a>
-                    <button id="modal-share" class="btn btn-share">📤 اشتراک</button>
+                    <a id="m-call" class="btn" style="background:#27ae60;">📞 تماس</a>
+                    <a id="m-insta" target="_blank" class="btn" style="background:linear-gradient(45deg, #f09433, #bc1888);">📸 اینستا</a>
+                    <button id="m-share" class="btn" style="background:#334155;">📤 اشتراک</button>
                 </div>
+            </div>
+
+            <div class="close-footer">
+                <button class="btn-close" onclick="closeModal()">✕</button>
             </div>
         </div>
     </div>
 
     <script>
         let allData = [];
+        let timer, progress = 0, isPaused = false;
+        const duration = 5000; // ۵ ثانیه برای هر استوری
 
-        async function fetchData() {
-            try {
-                const res = await fetch('data.json?v=' + Date.now());
-                const data = await res.json();
-                allData = data.items;
-                document.getElementById('marquee-text').innerText = data.config.marquee;
-                render();
-            } catch (e) { console.error("Error loading JSON"); }
+        async function init() {
+            const res = await fetch('data.json?v=' + Date.now());
+            const data = await res.json();
+            allData = data.items;
+            render();
         }
 
         function render() {
-            const sBox = document.getElementById('story-render');
-            const oBox = document.getElementById('offer-render');
+            const sBox = document.getElementById('story-render'), oBox = document.getElementById('offer-render');
             sBox.innerHTML = ''; oBox.innerHTML = '';
 
             allData.forEach(item => {
-                const isVideo = item.img.toLowerCase().endsWith('.mp4');
-                const mediaHtml = isVideo 
-                    ? `<video muted loop playsinline onmouseover="this.play()" onmouseout="this.pause()"><source src="${item.img}" type="video/mp4"></video>` 
-                    : `<img src="${item.img}" loading="lazy">`;
+                const isVid = item.img.toLowerCase().endsWith('.mp4');
+                const media = isVid ? `<video muted loop playsinline autoplay><source src="${item.img}"></video>` : `<img src="${item.img}">`;
+                const offBadge = item.off ? `<div class="off-tag">${item.off} OFF</div>` : '';
 
                 if(item.type === 'story') {
-                    sBox.innerHTML += `
-                        <div class="story-circle" onclick="openModal(${item.id})">
-                            ${mediaHtml}
-                            <span>${item.name}</span>
-                        </div>`;
+                    sBox.innerHTML += `<div class="story-circle" onclick="openModal(${item.id})">${media}<span>${item.name}</span></div>`;
                 } else {
                     oBox.innerHTML += `
                         <div class="offer-card" onclick="openModal(${item.id})">
-                            <div class="offer-badge">${item.badge || 'تخفیف'}</div>
-                            ${mediaHtml}
-                            <div class="offer-name">${item.name}</div>
+                            ${offBadge}
+                            ${media}
+                            <div style="padding:10px; font-weight:bold; font-size:13px; text-align:center;">${item.name}</div>
                         </div>`;
                 }
             });
@@ -141,58 +116,43 @@
 
         function openModal(id) {
             const item = allData.find(x => x.id === id);
-            if(!item) return;
+            const box = document.getElementById('media-box');
+            const isVid = item.img.toLowerCase().endsWith('.mp4');
 
-            const container = document.getElementById('modal-media-container');
-            const isVideo = item.img.toLowerCase().endsWith('.mp4');
-
-            if(isVideo) {
-                container.innerHTML = `<video class="modal-media" controls autoplay loop><source src="${item.img}" type="video/mp4"></video>`;
-            } else {
-                container.innerHTML = `<img src="${item.img}" class="modal-media">`;
-            }
-
-            document.getElementById('modal-title').innerText = item.name;
-            document.getElementById('modal-desc').innerText = item.desc;
-            document.getElementById('modal-call').href = "tel:" + item.phone;
-            document.getElementById('modal-insta').href = item.insta;
+            box.innerHTML = isVid ? `<video id="m-video" class="modal-media" autoplay playsinline><source src="${item.img}"></video>` : `<img src="${item.img}" class="modal-media">`;
             
-            document.getElementById('modal-share').onclick = () => {
-                if (navigator.share) {
-                    navigator.share({ title: item.name, text: item.desc, url: window.location.href });
-                }
-            };
+            document.getElementById('m-title').innerText = item.name;
+            document.getElementById('m-desc').innerText = item.desc;
+            document.getElementById('m-call').href = "tel:" + item.phone;
+            document.getElementById('m-insta').href = item.insta;
+            document.getElementById('m-share').onclick = () => navigator.share({title: item.name, text: item.desc, url: window.location.href});
 
             document.getElementById('modal').style.display = 'block';
-            document.body.style.overflow = 'hidden';
+            startProgress();
         }
+
+        function startProgress() {
+            progress = 0;
+            clearInterval(timer);
+            timer = setInterval(() => {
+                if(!isPaused) {
+                    progress += (100 / (duration / 50));
+                    document.getElementById('progress-bar').style.width = progress + '%';
+                    if(progress >= 100) closeModal();
+                }
+            }, 50);
+        }
+
+        function pauseStory() { isPaused = true; const v = document.getElementById('m-video'); if(v) v.pause(); }
+        function resumeStory() { isPaused = false; const v = document.getElementById('m-video'); if(v) v.play(); }
 
         function closeModal() {
-            const container = document.getElementById('modal-media-container');
-            container.innerHTML = ''; // توقف پخش ویدیو هنگام بستن
             document.getElementById('modal').style.display = 'none';
-            document.body.style.overflow = 'auto';
+            clearInterval(timer);
+            const v = document.getElementById('m-video'); if(v) v.pause();
         }
 
-        // PWA logic
-        let deferredPrompt;
-        window.addEventListener('beforeinstallprompt', (e) => {
-            e.preventDefault();
-            deferredPrompt = e;
-            document.getElementById('pwa-banner').style.display = 'flex';
-        });
-
-        document.getElementById('install-btn').addEventListener('click', async () => {
-            if (deferredPrompt) {
-                deferredPrompt.prompt();
-                deferredPrompt = null;
-                document.getElementById('pwa-banner').style.display = 'none';
-            }
-        });
-
-        if ('serviceWorker' in navigator) { navigator.serviceWorker.register('sw.js'); }
-
-        window.onload = fetchData;
+        window.onload = init;
     </script>
 </body>
 </html>
